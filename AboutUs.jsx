@@ -1,40 +1,42 @@
-```jsx
 import React from "react";
 
 function AboutUs() {
   return (
-    <div className="about-us">
-      <h1>About Paradise Nursery</h1>
+    <div className="about-us-container">
+      <h1>About Us</h1>
 
-      <p>
-        Welcome to Paradise Nursery, your one-stop online destination for
-        beautiful and healthy plants.
-      </p>
+      <section>
+        <h2>Our Company</h2>
+        <p>
+          Welcome to e-PlantShopping, your one-stop destination for buying
+          plants online. We provide a wide variety of beautiful and healthy
+          plants for homes, offices, gardens, and other spaces.
+        </p>
+      </section>
 
-      <p>
-        Our company is dedicated to making it easy for plant lovers to
-        discover and purchase a wide variety of indoor and outdoor plants.
-        We provide quality plants at affordable prices and aim to make
-        gardening simple and enjoyable for everyone.
-      </p>
+      <section>
+        <h2>Our Mission</h2>
+        <p>
+          Our mission is to make it easy for everyone to bring nature into
+          their lives by providing quality plants, convenient online shopping,
+          and reliable customer service.
+        </p>
+      </section>
 
-      <h2>Our Mission</h2>
-      <p>
-        Our mission is to bring nature closer to people by providing
-        high-quality plants and a convenient online shopping experience.
-      </p>
-
-      <h2>Why Choose Us?</h2>
-      <ul>
-        <li>Wide variety of plants</li>
-        <li>Quality and healthy plants</li>
-        <li>Affordable prices</li>
-        <li>Easy online shopping</li>
-        <li>User-friendly shopping cart</li>
-      </ul>
+      <section>
+        <h2>Our Services</h2>
+        <ul>
+          <li>Online plant shopping</li>
+          <li>Wide variety of indoor and outdoor plants</li>
+          <li>Plant care information</li>
+          <li>Easy and convenient ordering</li>
+          <li>Reliable delivery services</li>
+          <li>Customer support</li>
+        </ul>
+      </section>
     </div>
   );
 }
 
-export default AboutUs;
+
 ```
