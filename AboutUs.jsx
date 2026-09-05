@@ -1,42 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import ProductList from "./ProductList";
 
-function AboutUs() {
+function App() {
+  const [showProductList, setShowProductList] = useState(false);
+
   return (
-    <div className="about-us-container">
-      <h1>About Us</h1>
+    <div>
+      {!showProductList ? (
+        <div className="landing-page">
+          <h1>Welcome to e-PlantShopping</h1>
 
-      <section>
-        <h2>Our Company</h2>
-        <p>
-          Welcome to e-PlantShopping, your one-stop destination for buying
-          plants online. We provide a wide variety of beautiful and healthy
-          plants for homes, offices, gardens, and other spaces.
-        </p>
-      </section>
+          <p>
+            Bring nature into your home with our beautiful collection of
+            indoor and outdoor plants.
+          </p>
 
-      <section>
-        <h2>Our Mission</h2>
-        <p>
-          Our mission is to make it easy for everyone to bring nature into
-          their lives by providing quality plants, convenient online shopping,
-          and reliable customer service.
-        </p>
-      </section>
-
-      <section>
-        <h2>Our Services</h2>
-        <ul>
-          <li>Online plant shopping</li>
-          <li>Wide variety of indoor and outdoor plants</li>
-          <li>Plant care information</li>
-          <li>Easy and convenient ordering</li>
-          <li>Reliable delivery services</li>
-          <li>Customer support</li>
-        </ul>
-      </section>
+          <button onClick={() => setShowProductList(true)}>
+            Get Started
+          </button>
+        </div>
+      ) : (
+        <ProductList />
+      )}
     </div>
   );
 }
 
-
-```
+export default App;
